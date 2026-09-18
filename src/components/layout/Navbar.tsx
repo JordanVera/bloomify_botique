@@ -49,7 +49,7 @@ export default function Navbar() {
             alt={COMPANY.name}
             width={56}
             height={56}
-            className="h-12 w-auto  object-cover"
+            className="h-8 md:h-12 w-auto  object-cover"
             priority
           />
         </Link>

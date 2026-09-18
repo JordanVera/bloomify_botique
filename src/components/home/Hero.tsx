@@ -15,16 +15,16 @@ const SLIDE_DURATION_MS = 7000;
 
 const HERO_SLIDES = [
   {
+    src: '/gallery/gallery-02.png',
+    alt: 'Blush and white rose bouquet with gold-rim wrapping',
+  },
+  {
     src: '/gallery/gallery-01.png',
     alt: 'Luxury red rose ramó wrapped in hot-pink paper by Bloomify Boutique',
   },
   {
     src: '/gallery/gallery-05.png',
     alt: 'Hot-pink rose ramó in translucent wrapping by Bloomify Boutique El Paso',
-  },
-  {
-    src: '/gallery/gallery-02.png',
-    alt: 'Blush and white rose bouquet with gold-rim wrapping',
   },
 ] as const;
 

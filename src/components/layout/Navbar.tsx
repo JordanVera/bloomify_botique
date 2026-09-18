@@ -85,7 +85,7 @@ export default function Navbar() {
 
         <div className="flex items-center gap-1.5">
           <SocialLinks
-            className="mr-4 md:mr-2"
+            className="mr-2"
             iconSize={18}
             linkClassName="text-white/80 hover:text-white"
           />

@@ -103,7 +103,7 @@ export default function HomePage() {
             <div className="relative order-2 min-h-140 sm:min-h-170 lg:order-1">
               <div className="absolute inset-x-0 top-0 h-[72%] overflow-hidden rounded-t-[8rem]">
                 <Image
-                  src="/gallery/gallery-05.png"
+                  src="/gallery/775018598_17887103202610537_3528841871419055537_n.jpg"
                   alt="Hot-pink wrapped rose ramó by Bloomify Boutique"
                   fill
                   className="object-cover transition-transform duration-1000 hover:scale-[1.03]"
@@ -114,7 +114,7 @@ export default function HomePage() {
 
               <div className="absolute right-0 bottom-0 h-[44%] w-[58%] overflow-hidden border-[6px] border-[#171315] bg-[#171315] shadow-2xl sm:border-10">
                 <Image
-                  src="/gallery/gallery-04.png"
+                  src="/gallery/779633037_17887804155610537_8677391227249741259_n.jpg"
                   alt="Red and strawberry-pink ramós styled together"
                   fill
                   className="object-cover"

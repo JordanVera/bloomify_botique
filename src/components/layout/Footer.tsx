@@ -16,7 +16,7 @@ export default function Footer() {
                 alt={COMPANY.name}
                 width={96}
                 height={96}
-                className="h-20 w-20 rounded-full object-cover"
+                className="h-20 w-auto"
               />
             </Link>
             <p className="max-w-xs text-sm leading-relaxed">

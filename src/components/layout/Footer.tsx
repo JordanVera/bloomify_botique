@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import Image from 'next/image';
-import { MapPin, Instagram } from 'lucide-react';
+import { MapPin } from 'lucide-react';
 import { NAV_LINKS, COMPANY } from '@/lib/data';
 import SocialLinks from '@/components/layout/SocialLinks';
 
@@ -12,7 +12,7 @@ export default function Footer() {
           <div className="flex flex-col gap-4">
             <Link href="/" className="flex items-center gap-3">
               <Image
-                src="/logo.png"
+                src="/logo-white.png"
                 alt={COMPANY.name}
                 width={96}
                 height={96}
@@ -56,7 +56,6 @@ export default function Footer() {
                   rel="noopener noreferrer"
                   className="flex items-center gap-3 transition-colors hover:text-white"
                 >
-                  <Instagram size={14} className="shrink-0 text-white" />
                   {COMPANY.instagramHandle}
                 </a>
               </li>

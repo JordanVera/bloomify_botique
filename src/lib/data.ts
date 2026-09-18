@@ -53,6 +53,19 @@ export const ABOUT_CONTENT = {
     'Orders start with a form or Instagram DM. Once details are confirmed, a 50% deposit locks your bouquet in place — then Bloomify designs, wraps, and gets it into your hands looking as full and photo-ready as the feed.',
 };
 
+export const OWNER = {
+  name: 'Marissa',
+  role: 'Founder & Lead Florist',
+  image: '/owner.png',
+  imageAlt:
+    'Marissa, founder of Bloomify Boutique, holding a large custom pink rose ramó',
+  intro:
+    'Marissa started Bloomify Boutique to bring full, wrapped rose ramós to El Paso — bouquets built to look as good in your hands as they do on the feed.',
+  bio: 'Every order passes through her personally: rose count, color story, wrapping paper, and add-ons. From a 25-rose birthday ramó to a 100-count grad statement piece, she confirms the details, packs each bouquet tight, and makes sure the wrap is part of the moment.',
+  closing:
+    'Questions in English or Spanish? Reach out on Instagram or through the order form — Marissa handles follow-ups herself.',
+};
+
 export const STUDIO_HIGHLIGHTS = [
   {
     title: 'Custom Rose Ramós',
@@ -262,7 +275,11 @@ export const ADD_ON_OPTIONS = [
   { id: 'tulips', label: 'Tulips', note: '+$25' },
   { id: 'butterflies', label: 'Butterflies', note: '+$2 each' },
   { id: 'tassel', label: 'Graduation tassel (pink/black)', note: '+$10' },
-  { id: 'cherries', label: 'Artificial cherries / strawberries', note: '+$2 for 3' },
+  {
+    id: 'cherries',
+    label: 'Artificial cherries / strawberries',
+    note: '+$2 for 3',
+  },
   { id: 'rocher', label: 'Ferrero Rocher', note: '+$15' },
 ] as const;
 

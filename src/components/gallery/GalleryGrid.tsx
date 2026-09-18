@@ -64,7 +64,7 @@ export default function GalleryGrid({
       </div>
 
       <p className="text-center text-foreground/40 text-xs tracking-[0.12em] uppercase mb-8">
-        {filtered.length} bouquet{filtered.length === 1 ? "" : "s"}
+        {filtered.length} {filtered.length === 1 ? 'bouquet' : 'bouquets'}
       </p>
 
       <div className="columns-2 md:columns-3 gap-3 space-y-3">

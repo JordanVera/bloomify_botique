@@ -3,7 +3,6 @@
 import Link from 'next/link';
 import Image from 'next/image';
 import { motion } from 'framer-motion';
-import { Instagram } from 'lucide-react';
 import { COMPANY } from '@/lib/data';
 
 export default function CtaStrip() {
@@ -64,7 +63,6 @@ export default function CtaStrip() {
             rel="noopener noreferrer"
             className="inline-flex items-center justify-center gap-2 border border-white/50 px-8 py-3.5 text-xs tracking-[0.2em] text-white uppercase transition-all duration-200 hover:border-[#e56b8c] hover:text-[#e56b8c]"
           >
-            <Instagram size={13} />
             {COMPANY.instagramHandle}
           </a>
         </motion.div>

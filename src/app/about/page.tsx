@@ -4,7 +4,7 @@ import Link from 'next/link';
 import { ArrowRight } from 'lucide-react';
 import CtaStrip from '@/components/home/CtaStrip';
 import TestimonialsSection from '@/components/home/TestimonialsSection';
-import { ABOUT_CONTENT, COMPANY, STUDIO_HIGHLIGHTS } from '@/lib/data';
+import { ABOUT_CONTENT, COMPANY, OWNER, STUDIO_HIGHLIGHTS } from '@/lib/data';
 import { pageMetadata } from '@/lib/seo';
 
 export const metadata: Metadata = pageMetadata({
@@ -69,6 +69,54 @@ export default function AboutPage() {
         </div>
       </section>
 
+      <section className="overflow-hidden bg-[#171315] py-20 text-white sm:py-28">
+        <div className="mx-auto grid max-w-6xl items-center gap-12 px-6 lg:grid-cols-2 lg:gap-16 lg:px-8">
+          <div className="relative mx-auto w-full max-w-md lg:mx-0">
+            <div className="absolute -inset-3 rounded-[2rem] border border-primary/30" />
+            <div className="relative aspect-[4/5] overflow-hidden rounded-[1.75rem] shadow-2xl">
+              <Image
+                src={OWNER.image}
+                alt={OWNER.imageAlt}
+                fill
+                className="object-cover object-top"
+                sizes="(max-width: 1024px) 90vw, 42vw"
+              />
+              <div className="absolute inset-0 bg-linear-to-t from-black/50 via-transparent to-transparent" />
+            </div>
+          </div>
+
+          <div>
+            <p className="text-[10px] tracking-[0.35em] text-primary uppercase">
+              Meet the Owner
+            </p>
+            <h2 className="mt-4 font-serif text-4xl leading-tight sm:text-5xl">
+              {OWNER.name}
+            </h2>
+            <p className="mt-2 text-sm tracking-[0.18em] text-white/50 uppercase">
+              {OWNER.role}
+            </p>
+            <p className="mt-7 text-base leading-8 text-white/70 sm:text-lg">
+              {OWNER.intro}
+            </p>
+            <p className="mt-5 text-base leading-8 text-white/70 sm:text-lg">
+              {OWNER.bio}
+            </p>
+            <p className="mt-5 text-base leading-8 text-white/70 sm:text-lg">
+              {OWNER.closing}
+            </p>
+            <a
+              href={COMPANY.instagram}
+              target="_blank"
+              rel="noreferrer"
+              className="mt-8 inline-flex items-center gap-2 text-xs tracking-[0.2em] text-primary uppercase transition-colors hover:text-primary/80"
+            >
+              Follow {COMPANY.instagramHandle}
+              <ArrowRight size={12} />
+            </a>
+          </div>
+        </div>
+      </section>
+
       <section className="py-20 px-6 lg:px-8 bg-[#FBF6F7]">
         <div className="max-w-7xl mx-auto grid sm:grid-cols-2 gap-6">
           {STUDIO_HIGHLIGHTS.map((item) => (
@@ -84,7 +132,7 @@ export default function AboutPage() {
         </div>
       </section>
 
-      <TestimonialsSection />
+      {/* <TestimonialsSection /> */}
 
       <section className="py-16 px-6 text-center">
         <Link

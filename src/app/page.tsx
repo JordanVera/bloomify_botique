@@ -14,7 +14,6 @@ import {
   CheckCircle2,
   Flower2,
   Heart,
-  Instagram,
   Sparkles,
   Star,
 } from 'lucide-react';
@@ -65,7 +64,7 @@ const idealOccasions = [
 const boutiqueStats = [
   { value: '25–100', label: 'Rose ramós', icon: Flower2 },
   { value: 'El Paso', label: 'Far East pickup', icon: Heart },
-  { value: '2.5k', label: 'Instagram love', icon: Star },
+  { value: '2.5k', label: 'Instagram followers', icon: Star },
 ];
 
 export default function HomePage() {
@@ -139,7 +138,9 @@ export default function HomePage() {
               </div>
               <h2 className="mt-6 max-w-xl font-serif text-4xl leading-[1.08] sm:text-5xl lg:text-6xl">
                 One custom ramó.{' '}
-                <em className="font-normal text-primary">Every detail yours.</em>
+                <em className="font-normal text-primary">
+                  Every detail yours.
+                </em>
               </h2>
               <p className="mt-7 max-w-xl text-base leading-8 text-white/65 sm:text-lg">
                 From a 25-rose birthday bouquet to a 100-count statement piece,
@@ -177,7 +178,6 @@ export default function HomePage() {
                   rel="noreferrer"
                   className="inline-flex items-center justify-center gap-3 border border-white/25 px-7 py-4 text-xs tracking-[0.2em] text-white uppercase transition-colors hover:border-primary hover:text-primary"
                 >
-                  <Instagram className="h-4 w-4" />
                   {COMPANY.instagramHandle}
                 </a>
               </div>
@@ -314,7 +314,7 @@ export default function HomePage() {
           </div>
         </div>
       </section>
-      <TestimonialsSection />
+      {/* <TestimonialsSection /> */}
       <CtaStrip />
     </>
   );

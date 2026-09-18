@@ -45,16 +45,13 @@ export default function Navbar() {
       >
         <Link href="/" className="flex shrink-0 items-center gap-2 pl-1">
           <Image
-            src="/emblem.png"
+            src="/logo-white.png"
             alt={COMPANY.name}
             width={56}
             height={56}
-            className="h-12 w-12 rounded-full object-cover sm:h-14 sm:w-14"
+            className="h-12 w-auto  object-cover"
             priority
           />
-          <span className="hidden font-serif text-lg tracking-wide text-white sm:inline">
-            Bloomify
-          </span>
         </Link>
 
         <div className="hidden items-center gap-1 lg:flex">
